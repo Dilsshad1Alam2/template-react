@@ -64,7 +64,7 @@ const Reviews = () => {
         <ServiceTitle>What others are saying about us</ServiceTitle>
 
         <StyledCarouselProvider
-          naturalSlideWidth={isMobile ? 230 : 200}
+          naturalSlideWidth={isMobile ? 210 : 200}
           naturalSlideHeight={isMobile ? 300 : 200}
           totalSlides={4}
           visibleSlides={isMobile ? 1 : 2}
