@@ -6,6 +6,7 @@ import { Marginer } from "../../components/marginer";
 import Button from "../../components/Button/button";
 import Logo from "../../components/Logo/logo";
 import Navbar from "../../components/Navbar/Navbar";
+import { DownArrow } from "../../components/Downarrow/Downarrow";
 
 const FirstsectionContainer = styled.div`
   width: 100%;
@@ -28,6 +29,11 @@ const MainText = styled.div`
   letter-spacing: 1px;
   line-height: 3rem;
   color: white;
+  text-align: center;
+
+  @media screen and (max-width: 500px) {
+  font-size: 35px;
+  }
 `;
 
 const scrollToNext = function () {
@@ -43,10 +49,12 @@ const Firstsection = () => {
           <Marginer direction="vertical" margin="4em" />
           <Logo />
           <Marginer direction="vertical" margin="3em" />
-          <MainText> Worlds First Software Company</MainText>
-          <MainText> For all your needs</MainText>
+          <MainText>We Develop Websites</MainText>
+          <MainText>Using Reusable Components</MainText>
           <Marginer direction="vertical" margin="3em" />
-          <Button onClick={scrollToNext}>Apply Now</Button>
+          <Button >Hire us</Button>
+          <Marginer direction="vertical" margin="4em" />
+          <DownArrow onClick={scrollToNext}/>
         </BackgroundFilter>
       </FirstsectionContainer>
     </Element>

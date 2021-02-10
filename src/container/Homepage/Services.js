@@ -7,23 +7,20 @@ import ServiceTemplate from "../../components/ServiceTemplate/ServiceTemplate";
 import Service1Img from "../../assets/illustrations/web_development_.png";
 import Service2Img from "../../assets/illustrations/mobile_phone.png";
 import Service3Img from "../../assets/illustrations/bug_fixed.png";
+import { Marginer } from "../../components/marginer";
 
 const ServiceContainer = styled.div`
   min-height: 1100px;
   font-weight: 700;
   color: #262626;
   text-align: center;
-  width:auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 `;
 
-
-function displayconsole(params) {
-  console.log("working");
-}
 const Services = (props) => {
   return (
     <Element name="Services">
@@ -36,6 +33,7 @@ const Services = (props) => {
             "We build and deliver fully Integreated webapps with cuztomized control panel that fit your company needs"
           }
         />
+        <Marginer direction="vertical" margin="25px" />
         <ServiceTemplate
           reversed
           title="Mobile Optimized"
@@ -44,6 +42,7 @@ const Services = (props) => {
             "We build and deliver fully Integreated webapps with cuztomized control panel that fit your company needs"
           }
         />
+        <Marginer direction="vertical" margin="25px" />
         <ServiceTemplate
           title="Quality is our priority"
           image={Service3Img}
@@ -52,6 +51,7 @@ const Services = (props) => {
           }
         />
       </ServiceContainer>
+      <Marginer direction="vertical" margin="25px" />
     </Element>
   );
 };

@@ -26,7 +26,7 @@ const logo = (props) => {
   return (
     <LogoContainer {...props}>
       <LogoImg {...props} src={LogoPicture} />
-      <LogoText {...props}>Beema</LogoText>
+      <LogoText {...props}>WebR</LogoText>
     </LogoContainer>
   );
 };

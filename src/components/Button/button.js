@@ -21,6 +21,10 @@ border: 2px solid #00B997;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
+@media screen and (max-width: 500px) {
+    font-size:${({small}) => small ? '10px' : '13px' };
+  }
+
 `
 
 

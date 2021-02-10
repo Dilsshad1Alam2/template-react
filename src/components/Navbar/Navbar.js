@@ -33,7 +33,7 @@ const LoginButton = styled(Button)`
 
 
 function scroll(params) {
-  scroller.scrollTo('reviews',{smooth: true, duration :1000})
+  scroller.scrollTo('moreabout',{smooth: true, duration :1000})
 }
 
 const Navbar = () => {
@@ -43,7 +43,7 @@ const Navbar = () => {
         <Logo inline />
       </LogoContainer>
       <OtherNavContainer>
-        <Button onClick = {scroll} small>Get started</Button>
+        <Button onClick = {scroll} small>About</Button>
         <LoginButton small> Sign In</LoginButton>
       </OtherNavContainer>
     </NavbarContainer>

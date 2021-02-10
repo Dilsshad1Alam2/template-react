@@ -25,12 +25,13 @@ color: #fff;
 const Line = styled.div`
 height: 1px;
 width: 80%;
-background-color:#fff;
+background-color:rgba(255,255,255,0.2);
 `
 
 const Footer = () => {
   return (
     <FooterContainer>
+      <Marginer direction = 'vertical' margin = '3rem' />
       <Logo />
       <StyledServiceTitle>
         Just say the magic word and we will do the rest

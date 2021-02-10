@@ -17,11 +17,16 @@ const ItemsList = styled.ul`
   display: flex;
   gap: 1.5rem;
 
-li{
-    &:hover{
-      cursor: pointer;
+  @media screen and (max-width: 500px) {
+    font-size: 9px;
+    gap: 1rem;
   }
-}
+
+  li {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 `;
 
 const IconsList = styled.div`
@@ -30,8 +35,12 @@ const IconsList = styled.div`
   gap: 1.5rem;
   color: #fff;
 
-  &:hover{
-      cursor: pointer;
+  a {
+    color: inherit;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 `;
 
@@ -44,8 +53,15 @@ const FooterNav = () => {
         <li>Contact</li>
       </ItemsList>
       <IconsList>
-        <FontAwesomeIcon icon={faTwitter} />
-        <FontAwesomeIcon icon={faLinkedin} />
+        <a
+          href="https://www.linkedin.com/in/dilshad-alam-485906198/"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a href="https://twitter.com/Dilshad15384318" target="_blank">
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
       </IconsList>
     </FooterNavContainer>
   );
