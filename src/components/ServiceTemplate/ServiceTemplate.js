@@ -54,7 +54,6 @@ const ServiceDescription = styled.div`
   max-width: 60%;
 
   @media screen and (max-width: 500px) {
-    width: 80%;
     font-size: 16px;
     max-width: 100%;
   }
